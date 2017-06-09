@@ -37,8 +37,8 @@ dirCommit() {
 }
 
 cat <<-EOH
-Maintainers: Tim Düsterhus <tim@bastelstu.be> (@TimWolla)
-GitRepo: https://github.com/TimWolla/docker-adminer.git
+Maintainers: Fumihito Hachinohe <kid0725@gmail.com> (@blueberrystream)
+GitRepo: https://github.com/blueberrystream/docker-adminer.git
 EOH
 
 # prints "$2$1$3$1...$N"
