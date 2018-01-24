@@ -18,11 +18,11 @@ RUN	set -x \
 COPY	*.php /var/www/html/
 
 ENV	ADMINER_VERSION 4.4.0
-ENV	ADMINER_DOWNLOAD_SHA256 8c68ecabff07ea2207a9a8a634966cf0da8c20ab8299148329b0bff44d6174d7
+ENV	ADMINER_DOWNLOAD_SHA256 18400c26245de0d362a5cb261e62091e48887c9e983ad2e471adcd6943eb41e3
 ENV	ADMINER_SRC_DOWNLOAD_SHA256 ecd89a033d8561ffa65edd305cd18eec7538d8632e82dcec32cb9e2b05572f58
 
 RUN	set -x \
-&&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php \
+&&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php \
 &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c - \
 &&	curl -fsSL https://github.com/vrana/adminer/archive/v$ADMINER_VERSION.tar.gz -o source.tar.gz \
 &&	echo "$ADMINER_SRC_DOWNLOAD_SHA256  source.tar.gz" |sha256sum -c - \
