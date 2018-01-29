@@ -23,7 +23,7 @@ COPY	*.php /var/www/html/
 
 ENV	ADMINER_VERSION 4.5.0
 ENV	ADMINER_DOWNLOAD_SHA256 ccadc33019cb57a56a268d0d6be1a9e242dd0881dbddc06f376a06c7c5846ed0
-ENV	ADMINER_SRC_DOWNLOAD_SHA256 6ef3f49d369f0b5db60b6097cdc0e80bace49d9b2bb5f6e89f8abbd8ca6dfbe0
+ENV	ADMINER_SRC_DOWNLOAD_SHA256 8a1250b658e69ca9f84fc9a7697ced1b686b71723e174f840adc8f337494cc5e
 
 RUN	set -x \
 &&	curl -fsSL https://github.com/vrana/adminer/releases/download/v$ADMINER_VERSION/adminer-$ADMINER_VERSION.php -o adminer.php \
